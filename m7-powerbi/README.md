@@ -211,3 +211,10 @@ Ejemplos: campañas de marketing y embudos de ventas.
 
 ## Gráfico de jerarquía
 
+* Analizar : aqui se utiliza  una variable numerica a analizar
+* Explicar por : normalmente se utiliza una jerarquia, como por ejemplo una gerarquia de fechas o ubicasiones ejemplos:
+    * Fechas: año, Trimestre, mes, dia
+    * Ubicacion: region, pais, comunidad, ciudad, codigo postal
+    * Ventas holding empresarial: empresa, tienda, departamento, empleado
+
+Puede ser interesante crear pirmero una jerarquia, en caso de no tenerla.
