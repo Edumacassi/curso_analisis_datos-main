@@ -157,3 +157,57 @@ Filtro básico: permite seleccionar elementros concretos.
 Filtro avanzado: filtrar por lógica booleana y comparaciones
 
 Filtro Top N: sacar los 5 valores más altos o más bajos
+
+## Insertar texto e imágenes
+
+En el menú Insertar > Permite agregar un cuadro de texto al informe.
+
+En el menú Insertar > Permite agregar una imagen al informe.
+
+## Treemap
+
+Ejemplo de treemap en web: 
+
+* https://finviz.com/map.ashx
+* https://www.tradingview.com/heatmap/stock/?color=change&dataset=SPX500&group=sector&size=market_cap_basic
+
+
+## Gráfico de líneas
+
+en el Eje X colocar una fecha con jerarquía: Año > trimestre > mes > día.
+
+En el gráfico aparece arriba a la derecha unas flechas que permiten activar "Modo profundidad".
+
+Al activar el modo profundidad se quita el modo filtro y cuando se hace clic en un Año te abre sus trimestres, cuando se hace clic en trimestre te abre sus meses y así descendiendo hasta el final de la jerarquía.
+
+
+
+## Gráfico en cascada
+
+En Categoría se puede añadir un campo categórico como por ejemplo tipo de habitación.
+
+Eje Y variable numérica que se intenta desglosar en forma de cascada por categorías. Ejemplo: num_reservas.
+
+NOTA: probar columna con valores negativos.
+
+## Gráfico de cintas
+
+Gráfico de cintas o Ribbon chart, es una versión avanzada del gráfico de barras apiladas.
+
+En personalizacion del gráfico:
+
+* Activar etiquetas de datos y seleccionar la opción de Unidades ninguno.
+
+* Control deslizante de Zoom equivale a xlim ylim de matplotlib, permite aplicar zoom al gráfico de forma interactiva.
+
+## Gráfico de embudo
+
+Coloca primero la categoría que más valores tiene y a partir de ella calcula porcentajes del resto de valores en otras categorías con respecto a la primera.
+
+Tiene forma de embudo porque aparece primero la categoría que más valores tiene y termina con la que menos.
+
+Ejemplos: campañas de marketing y embudos de ventas.
+
+
+## Gráfico de jerarquía
+
