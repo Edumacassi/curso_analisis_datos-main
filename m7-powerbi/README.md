@@ -211,10 +211,53 @@ Ejemplos: campañas de marketing y embudos de ventas.
 
 ## Gráfico de jerarquía
 
-* Analizar : aqui se utiliza  una variable numerica a analizar
-* Explicar por : normalmente se utiliza una jerarquia, como por ejemplo una gerarquia de fechas o ubicasiones ejemplos:
-    * Fechas: año, Trimestre, mes, dia
-    * Ubicacion: region, pais, comunidad, ciudad, codigo postal
+* Analizar: aquí se utiliza una variable numérica a analizar
+* Explicar por: normalmente se utiliza una jerarquía, como por ejemplo una jerarquía de fechas o ubicaciones ejemplos:
+    * Fechas: año, trimestre, mes, día
+    * Ubicación: región, país, comunidad, ciudad, código postal
     * Ventas holding empresarial: empresa, tienda, departamento, empleado
 
-Puede ser interesante crear pirmero una jerarquia, en caso de no tenerla.
+Puede ser interesante crear primero una jerarquía en caso de no tenerla. Esto se hace seleccionando un campo cualquiera y en opciones > Crear jerarquía. Luego en el resto de campos en opciones > Añadir jerarquía.
+
+## Gráfico de dispersión (scatterplot)
+
+
+## Segmentación de datos
+
+Crear filtros en el propio gráfico, por ejemplo para filtrar por año o trimestre.
+
+Dar formato a su objeto visual > Configuración de la segmentación > Estilo permite cambiar entre desplegable o lista o slider. 
+
+## Mapas
+
+Archivo > Opciones y configuración > Opciones > Global > Seguridad
+
+Activar visualizaciones de mapas.
+
+
+## Tablas
+
+Se añade una tabla. Se arrastran los diferentes campos al elemento "Columnas".
+
+En personalizar Formato: 
+* Elementos de celda
+* Aplicar la configuración > Deja elegir una columna
+* Elegir una o varias opciones:
+    * Color de fondo
+    * Barras de datos
+    * Iconos
+
+
+## Matrices
+
+Similar a las tablas pivotantes de pandas.
+
+Filas:
+* Category
+* Sub-category
+
+Columnas:
+* Año
+
+Valores:
+* Sales
