@@ -219,8 +219,6 @@ Ejemplos: campañas de marketing y embudos de ventas.
 
 Puede ser interesante crear primero una jerarquía en caso de no tenerla. Esto se hace seleccionando un campo cualquiera y en opciones > Crear jerarquía. Luego en el resto de campos en opciones > Añadir jerarquía.
 
-## Gráfico de dispersión (scatterplot)
-
 
 ## Segmentación de datos
 
@@ -261,3 +259,104 @@ Columnas:
 
 Valores:
 * Sales
+
+## Gráfico de dispersión (scatterplot)
+
+Ejemplo: 
+
+* Valores: Customer Name
+* Eje X: Quantity
+* Eje Y: Sales
+
+Sobre el gráfico pulsar "Más opciones" y "Buscar clústeres automáticamente" esto crea un nuevo grupo donde permite seleccionar número de clústeres. Si no se especifica el número de clústeres se detecta automáticamente el más óptimo.
+
+Luego para personalizar un clúster o grupo, en Más opciones permite cambiar el nombre y número de clústeres.
+
+
+## Preguntas y respuestas
+
+Mostrar sugerencias.
+
+Permite escribir en lenguaje natural en inglés la gráfica deseada y la genera.
+
+Permite convertir a objeto visual una vez encontrada.
+
+## Obtener más objetos visuales
+
+Requiere cuenta profesional, se puede crear gratis.
+
+* Radar Chart
+* WordCloud
+* Sankey (Flow)
+* Heatmap
+
+
+## Gráfico de líneas:
+
+* Línea de constante
+* Línea de tendencia
+* Línea de Previsión 
+
+
+
+## Power Query problemas
+
+Posibles problema al leer un CSV con datos numéricos decimales. 
+
+### Solución 1:
+
+Implica transformar puntos por comas para que detecte la parte decimal:
+
+= Table.ReplaceValue(#"Encabezados promovidos",".",",",Replacer.ReplaceText,{"Open", "High", "Low", "Close", "Adj Close"})
+
+## Solución 2:
+
+Clic derecho > Cambiar Tipo > Configuración regional: 
+
+* Número decimal
+* Inglés (Estados Unidos)
+
+Ejemplo: 
+
+= Table.TransformColumnTypes(#"Encabezados promovidos", {{"Open", type number}, {"High", type number}, {"Low", type number}, {"Close", type number}, {"Adj Close", type number}}, "en-US")
+
+
+## Medidor
+
+* Valor: variable numérica a mostrar en el medidor
+* Valor mínimo: por defecto empieza en 0.
+* Valor máximo: valor tope a mostrar
+* Valor destino: valor al que se quiere llegar
+
+Ejemplo:
+
+* Valor: Profit
+* Valor destino: 1000000. Se puede añadir creando una medida.
+
+## KPI
+
+Key Performance Indicator
+
+* Valor: variable numérica a mostrar.
+* Eje de tendencia: fecha, tendencia del kpi a lo largo del tiempo.
+* Destino: valor deseado, se puede crear con una medida manual.
+
+Depende del eje de tendencia, muestra el último valor o valor más reciente del eje de tendencia.
+
+
+
+## Python
+
+### Opción 1: cargar datos de predicciones python en power bi
+
+Paso 1:
+
+Se crea un CSV con los datos y las predicciones.
+
+.to_csv de pandas podemos guardar un DataFrame que contenga predicciones ya hechas en una columna. 
+
+Paso 2:
+
+Se carga el CSV en Power BI como un CSV normal.
+
+### 
